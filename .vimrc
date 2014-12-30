@@ -71,3 +71,5 @@ set nospell
 au BufNewFile,BufRead *.ejs set filetype=jst
 au BufNewFile,BufRead *.less set filetype=less
 
+au BufRead,BufNewFile *.go setfiletype go
+
