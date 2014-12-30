@@ -14,10 +14,10 @@ if [ -f ~/.vimrc_vundle ]; then
 	mv ~/.vimrc_vundle ~/.vimrc_vundle.old
 fi;
 
-# Create hardlinks between local vimrc files and the actual vimrc files
-ln -f .vimrc ~/
-ln -f .vimrc_vundle ~/
-ln -f .vimrc_bundles ~/
+# Create symlinks between local vimrc files and the actual vimrc files
+ln -sf .vimrc ~/
+ln -sf .vimrc_vundle ~/
+ln -sf .vimrc_bundles ~/
 
 # Install Vundle (https://github.com/gmarik/vundle)
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
