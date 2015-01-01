@@ -4,6 +4,15 @@ set shell=/bin/bash
 " Not compatible with Vi
 set nocompatible
 
+" Allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" Display incomplete commands
+set showcmd
+
+" Perform incremental searches
+set incsearch
+
 " Vundle
 source ~/.vimrc_vundle
 
@@ -37,9 +46,9 @@ set laststatus=2
 set colorcolumn=80
 
 " Tabs
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set smarttab
 set expandtab
 let g:indentLine_char = '|'
@@ -72,4 +81,5 @@ au BufNewFile,BufRead *.ejs set filetype=jst
 au BufNewFile,BufRead *.less set filetype=less
 
 au BufRead,BufNewFile *.go setfiletype go
-
+au BufNewFile,BufRead *.ino set filetype=c
+au BufNewFile,BufRead *.pde set filetype=c
