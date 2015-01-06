@@ -8,4 +8,4 @@ Installation
 -----
 If you trust me, here's a one-line installation:
 
-    git clone https://github.com/mcsaucy/vimrc.git ~/.drew-vimrc; ~/.drew-vimrc/setup_vimrc.sh
+    git clone git://github.com/mcsaucy/drew-vimrc.git ~/.drew-vimrc && ~/.drew-vimrc/setup_vimrc.sh
