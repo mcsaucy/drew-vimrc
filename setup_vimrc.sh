@@ -15,9 +15,9 @@ if [ -f ~/.vimrc_vundle ]; then
 fi;
 
 # Create symlinks between local vimrc files and the actual vimrc files
-ln -sf .vimrc ~/
-ln -sf .vimrc_vundle ~/
-ln -sf .vimrc_bundles ~/
+ln -sf "$PWD/.vimrc" ~/
+ln -sf "$PWD/.vimrc_vundle" ~/
+ln -sf "$PWD/.vimrc_bundles" ~/
 
 # Install Vundle (https://github.com/gmarik/vundle)
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
