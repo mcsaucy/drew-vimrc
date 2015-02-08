@@ -26,9 +26,8 @@ silent! source ~/.vimrc_user
 set mouse=nv
 set ttymouse=xterm2
 
-" Relative line numbers
+" Line numbers
 set nu
-set rnu
 
 " Fix backspace
 set backspace=indent,eol,start
