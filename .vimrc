@@ -23,7 +23,7 @@ source ~/.vimrc_bundles
 silent! source ~/.vimrc_user
 
 " Enable mouse
-set mouse=a
+set mouse=nv
 set ttymouse=xterm2
 
 " Relative line numbers
